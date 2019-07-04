@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	def springVersion = '4.2.0.RELEASE'
+	
+	compile group: 'org.springframework', name: 'spring-context', version: '${springVersion}'
+	compile group: 'org.springframework', name: 'spring-beans', version: '${springVersion}'
+	
+	testImplementation 'junit:junit:4.12'
+	
+	
+}
